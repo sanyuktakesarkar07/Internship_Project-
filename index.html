@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness Centres Data Analysis</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #172554;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #101b3b;
+    padding: 20px 7%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h2 {
+    color: #60a5fa;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Hero Section */
+.hero {
+    padding: 90px 8%;
+    background: linear-gradient(120deg, #101b3b, #2563eb);
+    color: white;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.tagline {
+    color: #93c5fd;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.hero h1 span {
+    color: #93c5fd;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #60a5fa;
+    color: #101b3b;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: white;
+}
+
+/* General Sections */
+.section {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 850px;
+    margin: auto;
+    color: #475569;
+}
+
+.light-bg {
+    background: #eaf1ff;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    flex: 1 1 220px;
+    max-width: 340px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #dbe3ef;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+/* Statistics */
+.stat-card {
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 28px;
+}
+
+/* Technology */
+.tech-card {
+    text-align: center;
+}
+
+/* Project Files */
+.file-button {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.file-button:hover {
+    background: #101b3b;
+}
+
+/* Footer */
+footer {
+    background: #101b3b;
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+footer p {
+    color: #cbd5e1;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero {
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .section {
+        padding: 40px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <nav>
+        <h2>Fitness Analytics</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#files">Project Files</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">DATA ANALYTICS PROJECT</p>
+
+        <h1>
+            Fitness Centres<br>
+            <span>Data Analysis</span>
+        </h1>
+
+        <p>
+            Analysing fitness centre data to understand membership
+            prices, facility types, public ratings, locations
+            and crowd categories.
+        </p>
+
+        <a href="#files" class="button">View Project Files</a>
+    </div>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+    <h2>About the Project</h2>
+
+    <p class="description">
+        This project focuses on analysing fitness centre data.
+        Python is used for data processing and chart creation,
+        PostgreSQL is used for database management and SQL queries,
+        and Power BI is used to visualize business insights.
+    </p>
+
+    <div class="cards">
+        <div class="card stat-card">
+            <h3>150</h3>
+            <p>Dataset Records</p>
+        </div>
+
+        <div class="card stat-card">
+            <h3>3</h3>
+            <p>Technologies Used</p>
+        </div>
+
+        <div class="card stat-card">
+            <h3>4.40 / 5</h3>
+            <p>Average Public Rating</p>
+        </div>
+    </div>
+</section>
+
+<!-- Technologies -->
+<section class="section light-bg" id="technology">
+    <h2>Technologies Used</h2>
+
+    <div class="cards">
+        <div class="card tech-card">
+            <h3>Python</h3>
+            <p>Data processing, calculations and chart creation.</p>
+        </div>
+
+        <div class="card tech-card">
+            <h3>PostgreSQL</h3>
+            <p>Database creation, data storage and SQL analysis.</p>
+        </div>
+
+        <div class="card tech-card">
+            <h3>Power BI</h3>
+            <p>Dashboard creation and data visualization.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Project Files -->
+<section class="section" id="files">
+    <h2>My Project Files</h2>
+
+    <p class="description">
+        Access the files used in my Fitness Centres Data Analysis Project.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>CSV Dataset</h3>
+            <p>Fitness centre dataset used for analysis.</p>
+            <a class="file-button"
+               href="Business_ID%2CBusiness_Name%2CFacility%20(2).csv"
+               download>Download CSV</a>
+        </div>
+
+        <div class="card">
+            <h3>Excel File</h3>
+            <p>Fitness centre data in Excel format.</p>
+            <a class="file-button"
+               href="Business_ID%2CBusiness_Name%2CFacility%20(2).xlsx"
+               download>Download Excel</a>
+        </div>
+
+        <div class="card">
+            <h3>Power BI Dashboard</h3>
+            <p>Fitness centre business insights dashboard.</p>
+            <a class="file-button"
+               href="Fitness_Centre_Business_Insights_Dashboard.pbix"
+               download>Download Power BI</a>
+        </div>
+
+        <div class="card">
+            <h3>Python Script</h3>
+            <p>Python code for data analysis and charts.</p>
+            <a class="file-button"
+               href="project.py"
+               download>Download Python</a>
+        </div>
+
+        <div class="card">
+            <h3>SQL Query File</h3>
+            <p>SQL queries for database creation and analysis.</p>
+            <a class="file-button"
+               href="sql%20query.sql"
+               download>Download SQL</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <h3>Fitness Centres Data Analysis</h3>
+    <p>Data Analytics Project | 2026</p>
+</footer>
+
+</body>
+</html>
