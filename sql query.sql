@@ -1,0 +1,472 @@
+CREATE TABLE Fitness_Centre1 (
+    Business_ID VARCHAR(10) PRIMARY KEY,
+    Business_Name VARCHAR(100),
+    Facility_Type VARCHAR(50),
+    Location VARCHAR(50),
+    State VARCHAR(50),
+    Membership_Price_INR DECIMAL(10,2),
+    Duration VARCHAR(30),
+    Facilities TEXT,
+    Opening_Hours VARCHAR(50),
+    Public_Rating DECIMAL(2,1),
+    Review_Count INT,
+    Crowd_Category VARCHAR(20),
+    Duplicate_Check VARCHAR(20),
+    Clean_Data_Check VARCHAR(20)
+);
+
+INSERT INTO Fitness_Centre1
+(Business_ID, Business_Name, Facility_Type, Location, State,
+ Membership_Price_INR, Duration, Facilities, Opening_Hours,
+ Public_Rating, Review_Count, Crowd_Category,
+ Duplicate_Check, Clean_Data_Check)
+VALUES
+('F001','Gold Fitness Arena','Gym','Mumbai','Maharashtra',4000,'1 Month','Cardio;Free Weights;Strength Training;Personal Training','5 AM-11 PM',4.6,980,'High','No Duplicates','Clean'),
+('F002','FitZone Pro','Gym','Pune','Maharashtra',2200,'1 Month','Cardio;Free Weights;Functional Training;Parking','6 AM-10 PM',4.4,510,'High','No Duplicates','Clean'),
+('F003','PowerFit Club','Gym','Bengaluru','Karnataka',2500,'1 Month','Cardio;Strength Training;Zumba;Locker','5 AM-10 PM',4.5,620,'High','No Duplicates','Clean'),
+('F004','Active Life Fitness','Gym','Hyderabad','Telangana',2000,'1 Month','Cardio;Free Weights;Yoga;Parking','6 AM-10 PM',4.3,390,'Medium','No Duplicates','Clean'),
+('F005','Muscle Factory','Gym','Delhi','Delhi',2800,'1 Month','Free Weights;Strength Training;Cardio;Locker','5 AM-11 PM',4.5,760,'High','No Duplicates','Clean'),
+('F006','FitNation','Gym','Ahmedabad','Gujarat',1900,'1 Month','Cardio;Free Weights;Zumba;Parking','6 AM-10 PM',4.4,450,'High','No Duplicates','Clean'),
+('F007','Wellness Fitness Club','Fitness Centre','Kolkata','West Bengal',1700,'1 Month','Cardio;Yoga;Zumba;Locker','6 AM-9:30 PM',4.2,250,'Medium','No Duplicates','Clean'),
+('F008','Urban Strength','Gym','Indore','Madhya Pradesh',1500,'1 Month','Free Weights;Strength Training;Cardio;Parking','5:30 AM-10 PM',4.4,410,'High','No Duplicates','Clean'),
+('F009','FitCore Studio','Fitness Studio','Nagpur','Maharashtra',1300,'1 Month','Functional Training;Yoga;Cardio;Group Classes','6 AM-10 PM',4.5,275,'Medium','No Duplicates','Clean'),
+('F010','Elite Fitness Point','Gym','Nashik','Maharashtra',1200,'1 Month','Cardio;Free Weights;Strength Training;Locker','5:30 AM-10 PM',4.3,310,'Medium','No Duplicates','Clean'),
+('F011','BodyCraft Gym','Gym','Surat','Gujarat',1700,'1 Month','Cardio;Strength Training;Zumba;Parking','6 AM-10 PM',4.4,520,'High','No Duplicates','Clean'),
+('F012','FitMax','Gym','Lucknow','Uttar Pradesh',1400,'1 Month','Cardio;Free Weights;Functional Training;Locker','5 AM-10 PM',4.2,360,'Medium','No Duplicates','Clean'),
+('F013','Health First Fitness','Fitness Centre','Bhopal','Madhya Pradesh',1100,'1 Month','Cardio;Free Weights;Yoga;Parking','6 AM-9 PM',4.1,205,'Medium','No Duplicates','Clean'),
+('F014','ProFit Gym','Gym','Chandigarh','Chandigarh',2100,'1 Month','Cardio;Strength Training;Personal Training;Locker','5 AM-10 PM',4.5,670,'High','No Duplicates','Clean'),
+('F015','Muscle Mania','Gym','Kochi','Kerala',1500,'1 Month','Free Weights;Cardio;Strength Training;Parking','6 AM-10 PM',4.3,280,'Medium','No Duplicates','Clean'),
+('F016','Fitness Square','Gym','Coimbatore','Tamil Nadu',1300,'1 Month','Cardio;Free Weights;Zumba;Locker','5:30 AM-10 PM',4.4,325,'Medium','No Duplicates','Clean'),
+('F017','PowerFit Club','Gym','Vijayawada','Andhra Pradesh',1200,'1 Month','Cardio;Strength Training;Functional Training;Parking','6 AM-10 PM',4.2,190,'Medium','No Duplicates','Clean'),
+('F018','FitZone 24','Gym','Gurugram','Haryana',3500,'1 Month','Cardio;Free Weights;Strength Training;Locker;Personal Training','24 Hours',4.6,850,'High','No Duplicates','Clean'),
+('F019','StrongLife Gym','Gym','Noida','Uttar Pradesh',2600,'1 Month','Cardio;Free Weights;Functional Training;Parking','5 AM-11 PM',4.4,610,'High','No Duplicates','Clean'),
+('F020','Fitness First Hub','Fitness Centre','Thane','Maharashtra',2300,'1 Month','Cardio;Strength Training;Yoga;Locker','6 AM-10 PM',4.3,420,'Medium','No Duplicates','Clean'),
+('F021','Core Fitness','Gym','Navi Mumbai','Maharashtra',2500,'1 Month','Cardio;Free Weights;Functional Training;Personal Training','5:30 AM-10:30 PM',4.5,540,'High','No Duplicates','Clean'),
+('F022','FitPoint','Gym','Mysuru','Karnataka',1100,'1 Month','Cardio;Free Weights;Yoga;Parking','6 AM-9 PM',4.2,180,'Medium','No Duplicates','Clean'),
+('F023','Body Power Gym','Gym','Belagavi','Karnataka',1000,'1 Month','Free Weights;Strength Training;Cardio;Locker','5:30 AM-9:30 PM',4.3,160,'Medium','No Duplicates','Clean'),
+('F024','Fitness Avenue','Gym','Kolhapur','Maharashtra',1200,'1 Month','Cardio;Free Weights;Zumba;Parking','6 AM-10 PM',4.4,225,'Medium','No Duplicates','Clean'),
+('F025','FitLife Centre','Fitness Centre','Sangli','Maharashtra',950,'1 Month','Cardio;Strength Training;Yoga;Locker','6 AM-9:30 PM',4.2,140,'Low','No Duplicates','Clean'),
+('F026','Iron Fitness','Gym','Aurangabad','Maharashtra',1300,'1 Month','Free Weights;Cardio;Strength Training;Parking','5:30 AM-10 PM',4.3,260,'Medium','No Duplicates','Clean'),
+('F027','Healthy Body Gym','Gym','Rajkot','Gujarat',1100,'1 Month','Cardio;Free Weights;Functional Training;Locker','6 AM-10 PM',4.1,175,'Medium','No Duplicates','Clean'),
+('F028','Fit World','Gym','Vadodara','Gujarat',1500,'1 Month','Cardio;Strength Training;Zumba;Parking','5:30 AM-10 PM',4.4,310,'Medium','No Duplicates','Clean'),
+('F029','Urban Fitness Club','Gym','Patna','Bihar',1200,'1 Month','Cardio;Free Weights;Strength Training;Locker','6 AM-10 PM',4.2,205,'Medium','No Duplicates','Clean'),
+('F030','Power Fitness','Gym','Ranchi','Jharkhand',1000,'1 Month','Free Weights;Cardio;Parking;Locker','5:30 AM-9:30 PM',4.3,155,'Low','No Duplicates','Clean'),
+('F031','FitHub','Gym','Bhubaneswar','Odisha',1300,'1 Month','Cardio;Strength Training;Functional Training;Yoga','6 AM-10 PM',4.5,350,'High','No Duplicates','Clean'),
+('F032','Active Fitness Club','Gym','Guwahati','Assam',1400,'1 Month','Cardio;Free Weights;Zumba;Parking','6 AM-10 PM',4.3,245,'Medium','No Duplicates','Clean'),
+('F033','Muscle Point','Gym','Dehradun','Uttarakhand',1200,'1 Month','Free Weights;Strength Training;Cardio;Locker','5:30 AM-10 PM',4.4,220,'Medium','No Duplicates','Clean'),
+('F034','FitSquare','Gym','Amritsar','Punjab',1500,'1 Month','Cardio;Free Weights;Functional Training;Parking','6 AM-10 PM',4.2,285,'Medium','No Duplicates','Clean'),
+('F035','Fitness Planet','Gym','Jalandhar','Punjab',1300,'1 Month','Cardio;Strength Training;Zumba;Locker','5:30 AM-10 PM',4.3,240,'Medium','No Duplicates','Clean'),
+('F036','BodyFit Arena','Gym','Ludhiana','Punjab',1600,'1 Month','Cardio;Free Weights;Strength Training;Personal Training','5 AM-10 PM',4.5,390,'High','No Duplicates','Clean'),
+('F037','FitCare','Gym','Jodhpur','Rajasthan',1000,'1 Month','Cardio;Free Weights;Yoga;Parking','6 AM-9:30 PM',4.1,135,'Low','No Duplicates','Clean'),
+('F038','PowerZone','Gym','Udaipur','Rajasthan',1200,'1 Month','Cardio;Strength Training;Functional Training;Locker','5:30 AM-10 PM',4.4,210,'Medium','No Duplicates','Clean'),
+('F039','Fitness Arena','Gym','Kota','Rajasthan',1100,'1 Month','Free Weights;Cardio;Zumba;Parking','6 AM-10 PM',4.2,185,'Medium','No Duplicates','Clean'),
+('F040','FitWell','Fitness Centre','Meerut','Uttar Pradesh',1000,'1 Month','Cardio;Strength Training;Yoga;Locker','6 AM-9:30 PM',4.0,120,'Low','No Duplicates','Clean'),
+('F041','Strong Body Fitness','Gym','Kanpur','Uttar Pradesh',1200,'1 Month','Free Weights;Cardio;Strength Training;Parking','5:30 AM-10 PM',4.3,230,'Medium','No Duplicates','Clean'),
+('F042','FitPro Centre','Fitness Centre','Agra','Uttar Pradesh',1300,'1 Month','Cardio;Functional Training;Zumba;Locker','6 AM-10 PM',4.2,195,'Medium','No Duplicates','Clean'),
+('F043','Urban Gym','Gym','Varanasi','Uttar Pradesh',1100,'1 Month','Cardio;Free Weights;Strength Training;Parking','5:30 AM-10 PM',4.4,270,'Medium','No Duplicates','Clean'),
+('F044','Fitness Hub','Gym','Prayagraj','Uttar Pradesh',1000,'1 Month','Cardio;Free Weights;Yoga;Locker','6 AM-9:30 PM',4.1,145,'Low','No Duplicates','Clean'),
+('F045','Prime Body Fitness','Gym','Gwalior','Madhya Pradesh',1150,'1 Month','Cardio;Strength Training;Functional Training;Parking','5:30 AM-10 PM',4.3,175,'Medium','No Duplicates','Clean'),
+('F046','FitActive','Gym','Jabalpur','Madhya Pradesh',1050,'1 Month','Free Weights;Cardio;Zumba;Locker','6 AM-10 PM',4.2,160,'Low','No Duplicates','Clean'),
+('F047','HealthFit Gym','Gym','Raipur','Chhattisgarh',1250,'1 Month','Cardio;Strength Training;Yoga;Parking','5:30 AM-10 PM',4.4,235,'Medium','No Duplicates','Clean'),
+('F048','PowerHouse Fitness','Gym','Bilaspur','Chhattisgarh',900,'1 Month','Free Weights;Cardio;Strength Training;Locker','6 AM-9:30 PM',4.1,110,'Low','No Duplicates','Clean'),
+('F049','FitNation Club','Gym','Panaji','Goa',2200,'1 Month','Cardio;Free Weights;Yoga;Swimming Pool;Locker','6 AM-10 PM',4.6,520,'High','No Duplicates','Clean'),
+('F050','Coastal Fitness','Gym','Panaji','Goa',2000,'1 Month','Cardio;Strength Training;Functional Training;Parking','5:30 AM-10 PM',4.4,260,'Medium','No Duplicates','Clean'),
+('F051','WellFit Studio','Fitness Studio','Kochi','Kerala',1800,'1 Month','Yoga;Functional Training;Group Classes;Cardio','6 AM-9 PM',4.5,310,'Medium','No Duplicates','Clean'),
+('F052','Kerala Fitness Hub','Gym','Thiruvananthapuram','Kerala',1400,'1 Month','Cardio;Free Weights;Strength Training;Locker','5:30 AM-10 PM',4.3,220,'Medium','No Duplicates','Clean'),
+('F053','FitZone Kerala','Gym','Kozhikode','Kerala',1200,'1 Month','Cardio;Zumba;Yoga;Parking','6 AM-10 PM',4.2,185,'Medium','No Duplicates','Clean'),
+('F054','South Fitness Club','Gym','Mangaluru','Karnataka',1500,'1 Month','Cardio;Free Weights;Strength Training;Locker','5:30 AM-10 PM',4.4,270,'Medium','No Duplicates','Clean'),
+('F055','Mangalore Fit Hub','Gym','Mangaluru','Karnataka',1300,'1 Month','Cardio;Functional Training;Zumba;Parking','6 AM-10 PM',4.3,210,'Medium','No Duplicates','Clean'),
+('F056','Bengaluru Strength Lab','Gym','Bengaluru','Karnataka',2500,'1 Month','Free Weights;Strength Training;Personal Training;Locker','5 AM-11 PM',4.7,780,'High','No Duplicates','Clean'),
+('F057','Bangalore Fit Studio','Fitness Studio','Bengaluru','Karnataka',3000,'1 Month','Functional Training;Yoga;Group Classes;Personal Training','6 AM-10 PM',4.6,540,'High','No Duplicates','Clean'),
+('F058','Pune Fitness Works','Gym','Pune','Maharashtra',1900,'1 Month','Cardio;Free Weights;Strength Training;Parking','5:30 AM-10 PM',4.5,430,'High','No Duplicates','Clean'),
+('F059','Pune Wellness Club','Fitness Centre','Pune','Maharashtra',2400,'1 Month','Cardio;Yoga;Zumba;Locker;Steam','6 AM-10 PM',4.6,510,'High','No Duplicates','Clean'),
+('F060','Hyderabad Fitness Arena','Gym','Hyderabad','Telangana',2300,'1 Month','Cardio;Strength Training;Functional Training;Personal Training','5 AM-10 PM',4.5,460,'High','No Duplicates','Clean'),
+('F061','Hyderabad Power Gym','Gym','Hyderabad','Telangana',1800,'1 Month','Free Weights;Cardio;Strength Training;Parking','5:30 AM-10 PM',4.4,390,'Medium','No Duplicates','Clean'),
+('F062','Chennai Fitness Studio','Fitness Studio','Chennai','Tamil Nadu',2200,'1 Month','Yoga;Functional Training;Zumba;Cardio','6 AM-10 PM',4.5,350,'Medium','No Duplicates','Clean'),
+('F063','Chennai Strength Hub','Gym','Chennai','Tamil Nadu',1700,'1 Month','Cardio;Free Weights;Strength Training;Locker','5 AM-10 PM',4.3,310,'Medium','No Duplicates','Clean'),
+('F064','Delhi Fitness House','Gym','Delhi','Delhi',2400,'1 Month','Cardio;Free Weights;Strength Training;Parking','5 AM-11 PM',4.4,720,'High','No Duplicates','Clean'),
+('F065','Delhi Wellness Club','Fitness Centre','Delhi','Delhi',3200,'1 Month','Cardio;Yoga;Zumba;Steam;Locker','6 AM-10 PM',4.6,610,'High','No Duplicates','Clean'),
+('F066','Mumbai Fitness Arena','Gym','Mumbai','Maharashtra',3800,'1 Month','Cardio;Free Weights;Strength Training;Personal Training;Locker','5 AM-11 PM',4.5,840,'High','No Duplicates','Clean'),
+('F067','Mumbai Wellness Studio','Fitness Studio','Mumbai','Maharashtra',4500,'1 Month','Yoga;Functional Training;Personal Training;Steam;Shower','6 AM-10 PM',4.7,690,'High','No Duplicates','Clean'),
+('F068','Ahmedabad Fit Club','Gym','Ahmedabad','Gujarat',1600,'1 Month','Cardio;Free Weights;Zumba;Parking','5:30 AM-10 PM',4.4,320,'Medium','No Duplicates','Clean'),
+('F069','Jaipur Fitness Point','Gym','Jaipur','Rajasthan',1300,'1 Month','Cardio;Strength Training;Functional Training;Locker','6 AM-10 PM',4.3,280,'Medium','No Duplicates','Clean'),
+('F070','Kolkata Power Fitness','Gym','Kolkata','West Bengal',1500,'1 Month','Free Weights;Cardio;Strength Training;Parking','5:30 AM-10 PM',4.2,260,'Medium','No Duplicates','Clean'),
+('F071','Indore Fitness Club','Gym','Indore','Madhya Pradesh',1600,'1 Month','Cardio;Free Weights;Functional Training;Zumba','5 AM-10 PM',4.5,410,'High','No Duplicates','Clean'),
+('F072','Nagpur Strength Zone','Gym','Nagpur','Maharashtra',1400,'1 Month','Cardio;Strength Training;Free Weights;Locker','5:30 AM-10 PM',4.3,240,'Medium','No Duplicates','Clean'),
+('F073','Nashik Wellness Gym','Gym','Nashik','Maharashtra',1250,'1 Month','Cardio;Yoga;Zumba;Parking','6 AM-10 PM',4.4,195,'Medium','No Duplicates','Clean'),
+('F074','Surat Fitness Hub','Gym','Surat','Gujarat',1800,'1 Month','Cardio;Free Weights;Strength Training;Personal Training','5 AM-10 PM',4.5,430,'High','No Duplicates','Clean'),
+('F075','Vadodara Active Club','Gym','Vadodara','Gujarat',1400,'1 Month','Cardio;Functional Training;Yoga;Locker','6 AM-10 PM',4.3,220,'Medium','No Duplicates','Clean'),
+('F076','Bhopal Fitness Arena','Gym','Bhopal','Madhya Pradesh',1200,'1 Month','Free Weights;Cardio;Strength Training;Parking','5:30 AM-10 PM',4.2,180,'Medium','No Duplicates','Clean'),
+('F077','Lucknow Fitness World','Gym','Lucknow','Uttar Pradesh',1500,'1 Month','Cardio;Strength Training;Zumba;Locker','5 AM-10 PM',4.4,335,'High','No Duplicates','Clean'),
+('F078','Chandigarh Fit Arena','Gym','Chandigarh','Chandigarh',2300,'1 Month','Cardio;Free Weights;Functional Training;Personal Training;Parking','5 AM-10 PM',4.6,520,'High','No Duplicates','Clean'),
+('F079','City Fitness Club','Gym','Mumbai','Maharashtra',3500,'3 Months','Cardio;Free Weights;Strength Training;Locker','5 AM-11 PM',4.5,760,'High','No Duplicates','Clean'),
+('F080','FitPro Arena','Gym','Pune','Maharashtra',6000,'3 Months','Cardio;Strength Training;Zumba;Personal Training','6 AM-10 PM',4.6,480,'High','No Duplicates','Clean'),
+('F081','Power Gym India','Gym','Bengaluru','Karnataka',6500,'3 Months','Cardio;Free Weights;Functional Training;Locker','5 AM-10 PM',4.5,550,'High','No Duplicates','Clean'),
+('F082','Active Body Club','Gym','Hyderabad','Telangana',5200,'3 Months','Cardio;Strength Training;Yoga;Parking','6 AM-10 PM',4.4,410,'Medium','No Duplicates','Clean'),
+('F083','FitLife Arena','Gym','Delhi','Delhi',7000,'3 Months','Cardio;Free Weights;Personal Training;Locker;Steam','5 AM-11 PM',4.7,920,'High','No Duplicates','Clean'),
+('F084','Muscle Zone','Gym','Ahmedabad','Gujarat',4800,'3 Months','Free Weights;Strength Training;Cardio;Parking','5:30 AM-10 PM',4.3,360,'Medium','No Duplicates','Clean'),
+('F085','Wellness Plus','Fitness Centre','Kolkata','West Bengal',4500,'3 Months','Cardio;Yoga;Zumba;Locker','6 AM-9:30 PM',4.2,240,'Medium','No Duplicates','Clean'),
+('F086','Urban Fit Club','Gym','Indore','Madhya Pradesh',4200,'3 Months','Free Weights;Strength Training;Cardio;Parking','5:30 AM-10 PM',4.4,385,'High','No Duplicates','Clean'),
+('F087','FitCore Plus','Fitness Studio','Nagpur','Maharashtra',3900,'3 Months','Functional Training;Yoga;Cardio;Group Classes','6 AM-10 PM',4.5,260,'Medium','No Duplicates','Clean'),
+('F088','Elite Fitness Club','Gym','Nashik','Maharashtra',3500,'3 Months','Cardio;Free Weights;Strength Training;Locker','5:30 AM-10 PM',4.3,300,'Medium','No Duplicates','Clean'),
+('F089','BodyCraft Plus','Gym','Surat','Gujarat',5000,'3 Months','Cardio;Strength Training;Zumba;Parking','6 AM-10 PM',4.5,510,'High','No Duplicates','Clean'),
+('F090','FitMax Pro','Gym','Lucknow','Uttar Pradesh',3800,'3 Months','Cardio;Free Weights;Functional Training;Locker','5 AM-10 PM',4.2,350,'Medium','No Duplicates','Clean'),
+('F091','Health First Club','Fitness Centre','Bhopal','Madhya Pradesh',3200,'3 Months','Cardio;Free Weights;Yoga;Parking','6 AM-9 PM',4.2,200,'Medium','No Duplicates','Clean'),
+('F092','ProFit Plus','Gym','Chandigarh','Chandigarh',6200,'3 Months','Cardio;Strength Training;Personal Training;Locker','5 AM-10 PM',4.6,650,'High','No Duplicates','Clean'),
+('F093','Muscle Mania Plus','Gym','Kochi','Kerala',4200,'3 Months','Free Weights;Cardio;Strength Training;Parking','6 AM-10 PM',4.4,275,'Medium','No Duplicates','Clean'),
+('F094','Fitness Square Plus','Gym','Coimbatore','Tamil Nadu',3600,'3 Months','Cardio;Free Weights;Zumba;Locker','5:30 AM-10 PM',4.5,320,'Medium','No Duplicates','Clean'),
+('F095','PowerFit Arena','Gym','Vijayawada','Andhra Pradesh',3300,'3 Months','Cardio;Strength Training;Functional Training;Parking','6 AM-10 PM',4.3,185,'Medium','No Duplicates','Clean'),
+('F096','FitZone Elite','Gym','Gurugram','Haryana',9000,'3 Months','Cardio;Free Weights;Strength Training;Locker;Personal Training','24 Hours',4.7,840,'High','No Duplicates','Clean'),
+('F097','StrongLife Plus','Gym','Noida','Uttar Pradesh',7200,'3 Months','Cardio;Free Weights;Functional Training;Parking','5 AM-11 PM',4.5,600,'High','No Duplicates','Clean'),
+('F098','Fitness First Plus','Fitness Centre','Thane','Maharashtra',6500,'3 Months','Cardio;Strength Training;Yoga;Locker','6 AM-10 PM',4.4,415,'Medium','No Duplicates','Clean'),
+('F099','Core Fitness Plus','Gym','Navi Mumbai','Maharashtra',7000,'3 Months','Cardio;Free Weights;Functional Training;Personal Training','5:30 AM-10:30 PM',4.6,535,'High','No Duplicates','Clean'),
+('F100','FitPoint Plus','Gym','Mysuru','Karnataka',3000,'3 Months','Cardio;Free Weights;Yoga;Parking','6 AM-9 PM',4.3,175,'Medium','No Duplicates','Clean'),
+('F101','Body Power Elite','Gym','Belagavi','Karnataka',2800,'3 Months','Free Weights;Strength Training;Cardio;Locker','5:30 AM-9:30 PM',4.4,155,'Medium','No Duplicates','Clean'),
+('F102','Fitness Avenue Plus','Gym','Kolhapur','Maharashtra',3200,'3 Months','Cardio;Free Weights;Zumba;Parking','6 AM-10 PM',4.5,220,'Medium','No Duplicates','Clean'),
+('F103','FitLife Plus','Fitness Centre','Sangli','Maharashtra',2600,'3 Months','Cardio;Strength Training;Yoga;Locker','6 AM-9:30 PM',4.3,135,'Low','No Duplicates','Clean'),
+('F104','Iron Fitness Plus','Gym','Aurangabad','Maharashtra',3500,'3 Months','Free Weights;Cardio;Strength Training;Parking','5:30 AM-10 PM',4.4,255,'Medium','No Duplicates','Clean'),
+('F105','Healthy Body Plus','Gym','Rajkot','Gujarat',3000,'3 Months','Cardio;Free Weights;Functional Training;Locker','6 AM-10 PM',4.2,170,'Medium','No Duplicates','Clean'),
+('F106','Fit World Plus','Gym','Vadodara','Gujarat',4200,'3 Months','Cardio;Strength Training;Zumba;Parking','5:30 AM-10 PM',4.5,305,'Medium','No Duplicates','Clean'),
+('F107','Urban Fitness Plus','Gym','Patna','Bihar',3200,'3 Months','Cardio;Free Weights;Strength Training;Locker','6 AM-10 PM',4.2,200,'Medium','No Duplicates','Clean'),
+('F108','Power Fitness Plus','Gym','Ranchi','Jharkhand',2700,'3 Months','Free Weights;Cardio;Parking;Locker','5:30 AM-9:30 PM',4.3,150,'Low','No Duplicates','Clean'),
+('F109','FitHub Plus','Gym','Bhubaneswar','Odisha',3600,'3 Months','Cardio;Strength Training;Functional Training;Yoga','6 AM-10 PM',4.5,345,'High','No Duplicates','Clean'),
+('F110','Active Fitness Plus','Gym','Guwahati','Assam',3900,'3 Months','Cardio;Free Weights;Zumba;Parking','6 AM-10 PM',4.4,240,'Medium','No Duplicates','Clean'),
+('F111','Muscle Point Plus','Gym','Dehradun','Uttarakhand',3300,'3 Months','Free Weights;Strength Training;Cardio;Locker','5:30 AM-10 PM',4.5,215,'Medium','No Duplicates','Clean'),
+('F112','FitSquare Plus','Gym','Amritsar','Punjab',4100,'3 Months','Cardio;Free Weights;Functional Training;Parking','6 AM-10 PM',4.3,280,'Medium','No Duplicates','Clean'),
+('F113','Fitness Planet Plus','Gym','Jalandhar','Punjab',3500,'3 Months','Cardio;Strength Training;Zumba;Locker','5:30 AM-10 PM',4.4,235,'Medium','No Duplicates','Clean'),
+('F114','BodyFit Elite','Gym','Ludhiana','Punjab',4500,'3 Months','Cardio;Free Weights;Strength Training;Personal Training','5 AM-10 PM',4.6,385,'High','No Duplicates','Clean'),
+('F115','FitCare Plus','Gym','Jodhpur','Rajasthan',2800,'3 Months','Cardio;Free Weights;Yoga;Parking','6 AM-9:30 PM',4.2,130,'Low','No Duplicates','Clean'),
+('F116','PowerZone Plus','Gym','Udaipur','Rajasthan',3200,'3 Months','Cardio;Strength Training;Functional Training;Locker','5:30 AM-10 PM',4.5,205,'Medium','No Duplicates','Clean'),
+('F117','Fitness Arena Plus','Gym','Kota','Rajasthan',3000,'3 Months','Free Weights;Cardio;Zumba;Parking','6 AM-10 PM',4.3,180,'Medium','No Duplicates','Clean'),
+('F118','FitWell Plus','Fitness Centre','Meerut','Uttar Pradesh',2800,'3 Months','Cardio;Strength Training;Yoga;Locker','6 AM-9:30 PM',4.1,115,'Low','No Duplicates','Clean'),
+('F119','Strong Body Plus','Gym','Kanpur','Uttar Pradesh',3300,'3 Months','Free Weights;Cardio;Strength Training;Parking','5:30 AM-10 PM',4.4,225,'Medium','No Duplicates','Clean'),
+('F120','FitPro Plus','Fitness Centre','Agra','Uttar Pradesh',3500,'3 Months','Cardio;Functional Training;Zumba;Locker','6 AM-10 PM',4.3,190,'Medium','No Duplicates','Clean'),
+('F121','Urban Gym Plus','Gym','Varanasi','Uttar Pradesh',3000,'3 Months','Cardio;Free Weights;Strength Training;Parking','5:30 AM-10 PM',4.5,265,'Medium','No Duplicates','Clean'),
+('F122','Fitness Hub Plus','Gym','Prayagraj','Uttar Pradesh',2700,'3 Months','Cardio;Free Weights;Yoga;Locker','6 AM-9:30 PM',4.2,140,'Low','No Duplicates','Clean'),
+('F123','Prime Body Plus','Gym','Gwalior','Madhya Pradesh',3100,'3 Months','Cardio;Strength Training;Functional Training;Parking','5:30 AM-10 PM',4.4,170,'Medium','No Duplicates','Clean'),
+('F124','FitActive Plus','Gym','Jabalpur','Madhya Pradesh',2900,'3 Months','Free Weights;Cardio;Zumba;Locker','6 AM-10 PM',4.3,155,'Low','No Duplicates','Clean'),
+('F125','HealthFit Plus','Gym','Raipur','Chhattisgarh',3400,'3 Months','Cardio;Strength Training;Yoga;Parking','5:30 AM-10 PM',4.5,230,'Medium','No Duplicates','Clean'),
+('F126','PowerHouse Plus','Gym','Bilaspur','Chhattisgarh',2500,'3 Months','Free Weights;Cardio;Strength Training;Locker','6 AM-9:30 PM',4.2,105,'Low','No Duplicates','Clean'),
+('F127','FitNation Elite','Gym','Panaji','Goa',6500,'3 Months','Cardio;Free Weights;Yoga;Swimming Pool;Locker','6 AM-10 PM',4.7,515,'High','No Duplicates','Clean'),
+('F128','Coastal Fitness Plus','Gym','Panaji','Goa',5800,'3 Months','Cardio;Strength Training;Functional Training;Parking','5:30 AM-10 PM',4.5,255,'Medium','No Duplicates','Clean'),
+('F129','WellFit Plus','Fitness Studio','Kochi','Kerala',5200,'3 Months','Yoga;Functional Training;Group Classes;Cardio','6 AM-9 PM',4.6,305,'Medium','No Duplicates','Clean'),
+('F130','Kerala Fitness Plus','Gym','Thiruvananthapuram','Kerala',4000,'3 Months','Cardio;Free Weights;Strength Training;Locker','5:30 AM-10 PM',4.4,215,'Medium','No Duplicates','Clean'),
+('F131','FitZone South','Gym','Kozhikode','Kerala',3500,'3 Months','Cardio;Zumba;Yoga;Parking','6 AM-10 PM',4.3,180,'Medium','No Duplicates','Clean'),
+('F132','South Fitness Plus','Gym','Mangaluru','Karnataka',4200,'3 Months','Cardio;Free Weights;Strength Training;Locker','5:30 AM-10 PM',4.5,265,'Medium','No Duplicates','Clean'),
+('F133','Mangalore Fit Plus','Gym','Mangaluru','Karnataka',3700,'3 Months','Cardio;Functional Training;Zumba;Parking','6 AM-10 PM',4.4,205,'Medium','No Duplicates','Clean'),
+('F134','Bengaluru Strength Plus','Gym','Bengaluru','Karnataka',7500,'3 Months','Free Weights;Strength Training;Personal Training;Locker','5 AM-11 PM',4.8,775,'High','No Duplicates','Clean'),
+('F135','Bangalore Fit Elite','Fitness Studio','Bengaluru','Karnataka',8500,'3 Months','Functional Training;Yoga;Group Classes;Personal Training','6 AM-10 PM',4.7,535,'High','No Duplicates','Clean'),
+('F136','Pune Fitness Elite','Gym','Pune','Maharashtra',5700,'3 Months','Cardio;Free Weights;Strength Training;Parking','5:30 AM-10 PM',4.6,425,'High','No Duplicates','Clean'),
+('F137','Pune Wellness Plus','Fitness Centre','Pune','Maharashtra',7200,'3 Months','Cardio;Yoga;Zumba;Locker;Steam','6 AM-10 PM',4.7,505,'High','No Duplicates','Clean'),
+('F138','Hyderabad Fitness Plus','Gym','Hyderabad','Telangana',6900,'3 Months','Cardio;Strength Training;Functional Training;Personal Training','5 AM-10 PM',4.6,455,'High','No Duplicates','Clean'),
+('F139','Hyderabad Power Plus','Gym','Hyderabad','Telangana',5400,'3 Months','Free Weights;Cardio;Strength Training;Parking','5:30 AM-10 PM',4.5,385,'Medium','No Duplicates','Clean'),
+('F140','Chennai Fitness Plus','Fitness Studio','Chennai','Tamil Nadu',6600,'3 Months','Yoga;Functional Training;Zumba;Cardio','6 AM-10 PM',4.6,345,'Medium','No Duplicates','Clean'),
+('F141','Chennai Strength Plus','Gym','Chennai','Tamil Nadu',5100,'3 Months','Cardio;Free Weights;Strength Training;Locker','5 AM-10 PM',4.4,305,'Medium','No Duplicates','Clean'),
+('F142','Delhi Fitness Elite','Gym','Delhi','Delhi',7200,'3 Months','Cardio;Free Weights;Strength Training;Parking','5 AM-11 PM',4.5,715,'High','No Duplicates','Clean'),
+('F143','Delhi Wellness Plus','Fitness Centre','Delhi','Delhi',9000,'3 Months','Cardio;Yoga;Zumba;Steam;Locker','6 AM-10 PM',4.7,605,'High','No Duplicates','Clean'),
+('F144','Mumbai Fitness Elite','Gym','Mumbai','Maharashtra',10500,'3 Months','Cardio;Free Weights;Strength Training;Personal Training;Locker','5 AM-11 PM',4.6,835,'High','No Duplicates','Clean'),
+('F145','Mumbai Wellness Plus','Fitness Studio','Mumbai','Maharashtra',12000,'3 Months','Yoga;Functional Training;Personal Training;Steam;Shower','6 AM-10 PM',4.8,685,'High','No Duplicates','Clean'),
+('F146','Ahmedabad Fit Elite','Gym','Ahmedabad','Gujarat',4800,'3 Months','Cardio;Free Weights;Zumba;Parking','5:30 AM-10 PM',4.5,315,'Medium','No Duplicates','Clean'),
+('F147','Jaipur Fitness Plus','Gym','Jaipur','Rajasthan',3900,'3 Months','Cardio;Strength Training;Functional Training;Locker','6 AM-10 PM',4.4,275,'Medium','No Duplicates','Clean'),
+('F148','Kolkata Power Plus','Gym','Kolkata','West Bengal',4500,'3 Months','Free Weights;Cardio;Strength Training;Parking','5:30 AM-10 PM',4.3,255,'Medium','No Duplicates','Clean'),
+('F149','Indore Fitness Elite','Gym','Indore','Madhya Pradesh',4700,'3 Months','Cardio;Free Weights;Functional Training;Zumba','5 AM-10 PM',4.6,405,'High','No Duplicates','Clean'),
+('F150','Nagpur Strength Elite','Gym','Nagpur','Maharashtra',4200,'3 Months','Cardio;Strength Training;Free Weights;Locker','5:30 AM-10 PM',4.4,235,'Medium','No Duplicates','Clean');
+
+SELECT * FROM Fitness_Centre1;
+
+SELECT COUNT(*) FROM Fitness_Centre1;
+
+SELECT Business_Name, Location, Membership_Price_INR
+FROM Fitness_Centre1
+ORDER BY Membership_Price_INR DESC
+LIMIT 10;
+
+SELECT Business_Name, Location, Membership_Price_INR
+FROM Fitness_Centre1
+ORDER BY Membership_Price_INR ASC
+LIMIT 10;
+
+SELECT Business_Name, Location, Public_Rating
+ FROM Fitness_Centre1
+ORDER BY Public_Rating DESC
+LIMIT 10;
+
+SELECT Business_Name, Location, Review_Count
+FROM Fitness_Centre1
+ORDER BY Review_Count DESC
+LIMIT 10;
+
+SELECT ROUND(AVG(Membership_Price_INR), 2) AS Average_Membership_Price
+FROM Fitness_Centre1;
+
+SELECT ROUND(AVG(Public_Rating), 2) AS Average_Rating
+FROM Fitness_Centre1;
+
+SELECT Facility_Type, COUNT(*) AS Total_Centres
+FROM Fitness_Centre1
+GROUP BY Facility_Type
+ORDER BY Total_Centres DESC;
+
+SELECT State, COUNT(*) AS Total_Centres
+FROM Fitness_Centre1
+GROUP BY State
+ORDER BY Total_Centres DESC;
+
+SELECT Crowd_Category, COUNT(*) AS Total_Centres
+FROM Fitness_Centre1
+GROUP BY Crowd_Category
+ORDER BY Total_Centres DESC;
+
+SELECT 
+    Duration,
+    COUNT(*) AS Total_Centres,
+    ROUND(AVG(Membership_Price_INR), 2) AS Average_Price
+FROM Fitness_Centre1
+GROUP BY Duration
+ORDER BY Duration;
+
+SELECT 
+    Business_Name,
+    Location,
+    Membership_Price_INR,
+    Public_Rating
+FROM Fitness_Centre1
+WHERE State = 'Maharashtra'
+ORDER BY Membership_Price_INR DESC;
+
+SELECT 
+    Business_Name,
+    Location,
+    Public_Rating,
+    Review_Count
+FROM Fitness_Centre1
+WHERE Public_Rating >= 4.5
+ORDER BY Public_Rating DESC;
+
+SELECT 
+    Business_Name,
+    Location,
+    Duration,
+    Membership_Price_INR
+FROM Fitness_Centre1
+WHERE Membership_Price_INR > 5000
+ORDER BY Membership_Price_INR DESC;
+
+
+SELECT 
+    Clean_Data_Check,
+    COUNT(*) AS Total
+FROM Fitness_Centre1
+GROUP BY Clean_Data_Check;
+
+SELECT 
+    Business_Name,
+    Location,
+    Public_Rating,
+    Review_Count,
+    Membership_Price_INR
+FROM Fitness_Centre1
+WHERE Public_Rating >= 4.5
+AND Review_Count >= 500
+ORDER BY Public_Rating DESC, Review_Count DESC;
+
+SELECT 
+    State,
+    COUNT(*) AS Total_Centres,
+    ROUND(AVG(Membership_Price_INR), 2) AS Average_Price
+FROM Fitness_Centre1
+GROUP BY State
+ORDER BY Average_Price DESC;
+
+
+
+SELECT 
+    Business_Name,
+    Location,
+    Review_Count,
+    Public_Rating
+FROM Fitness_Centre1
+ORDER BY Review_Count DESC
+LIMIT 10;
+
+SELECT 
+    Business_Name,
+    Membership_Price_INR,
+    CASE
+        WHEN Membership_Price_INR < 3000 THEN 'Budget'
+        WHEN Membership_Price_INR BETWEEN 3000 AND 5000 THEN 'Standard'
+        ELSE 'Premium'
+    END AS Price_Category
+FROM Fitness_Centre1
+ORDER BY Membership_Price_INR DESC;
+
+SELECT 
+    Business_Name,
+    Public_Rating,
+    CASE
+        WHEN Public_Rating >= 4.5 THEN 'Excellent'
+        WHEN Public_Rating >= 4.0 THEN 'Good'
+        ELSE 'Average'
+    END AS Rating_Category
+FROM Fitness_Centre1
+ORDER BY Public_Rating DESC;
+
+SELECT 
+    Business_Name,
+    Location,
+    Membership_Price_INR
+FROM Fitness_Centre1
+WHERE Membership_Price_INR >
+(
+    SELECT AVG(Membership_Price_INR)
+    FROM Fitness_Centre1
+)
+ORDER BY Membership_Price_INR DESC;
+
+SELECT 
+    Business_Name,
+    Location,
+    Public_Rating
+FROM Fitness_Centre1
+WHERE Public_Rating >
+(
+    SELECT AVG(Public_Rating)
+    FROM Fitness_Centre1
+)
+ORDER BY Public_Rating DESC;
+
+WITH State_Average AS (
+    SELECT 
+        State,
+        ROUND(AVG(Membership_Price_INR), 2) AS Average_Price
+    FROM Fitness_Centre1
+    GROUP BY State
+)
+SELECT *
+FROM State_Average
+ORDER BY Average_Price DESC;
+
+SELECT 
+    Business_Name,
+    Location,
+    Membership_Price_INR,
+    RANK() OVER (
+        ORDER BY Membership_Price_INR DESC
+    ) AS Price_Rank
+FROM Fitness_Centre1;
+
+SELECT 
+    Business_Name,
+    Location,
+    Review_Count,
+    DENSE_RANK() OVER (
+        ORDER BY Review_Count DESC
+    ) AS Review_Rank
+FROM Fitness_Centre1;
+
+SELECT *
+FROM (
+    SELECT 
+        Business_Name,
+        State,
+        Location,
+        Public_Rating,
+        ROW_NUMBER() OVER (
+            PARTITION BY State
+            ORDER BY Public_Rating DESC
+        ) AS Rank_In_State
+    FROM Fitness_Centre1
+) AS Ranked_Centres
+WHERE Rank_In_State = 1;
+
+SELECT 
+    Business_Name,
+    Location,
+    Facilities
+FROM Fitness_Centre1
+WHERE Facilities ILIKE '%Parking%';
+
+SELECT 
+    Duration,
+    COUNT(*) AS Total_Centres,
+    ROUND(AVG(Membership_Price_INR), 2) AS Average_Price,
+    ROUND(AVG(Public_Rating), 2) AS Average_Rating
+FROM Fitness_Centre1
+GROUP BY Duration
+ORDER BY Duration;
+
+SELECT
+    MIN(Membership_Price_INR) AS Minimum_Price,
+    MAX(Membership_Price_INR) AS Maximum_Price,
+    ROUND(AVG(Membership_Price_INR), 2) AS Average_Price,
+    MIN(Public_Rating) AS Minimum_Rating,
+    MAX(Public_Rating) AS Maximum_Rating
+FROM Fitness_Centre1;
+
+SELECT Business_ID, Membership_Price_INR, Public_Rating, Review_Count
+FROM Fitness_Centre1
+WHERE Membership_Price_INR < 0
+   OR Public_Rating < 0
+   OR Public_Rating > 5
+   OR Review_Count < 0;
+
+SELECT COUNT(*) AS Total_Records
+FROM Fitness_Centre1; 
+
+SELECT
+    COUNT(*) AS Total_Records,
+    COUNT(*) FILTER (
+        WHERE Business_ID IS NULL
+    ) AS Missing_ID,
+    COUNT(*) FILTER (
+        WHERE Business_Name IS NULL
+    ) AS Missing_Name,
+    COUNT(*) FILTER (
+        WHERE Location IS NULL
+    ) AS Missing_Location,
+    COUNT(*) FILTER (
+        WHERE Membership_Price_INR IS NULL
+    ) AS Missing_Price
+FROM Fitness_Centre1;
+
+SELECT
+    'Duplicate Rows' AS Check_Type,
+    COUNT(*) AS Total_Duplicate_Groups
+FROM (
+    SELECT Business_ID, Business_Name, Facility_Type,
+           Location, State, Membership_Price_INR,
+           Duration, Facilities, Opening_Hours,
+           Public_Rating, Review_Count, Crowd_Category,
+           Duplicate_Check, Clean_Data_Check
+    FROM Fitness_Centre1
+    GROUP BY
+        Business_ID, Business_Name, Facility_Type,
+        Location, State, Membership_Price_INR,
+        Duration, Facilities, Opening_Hours,
+        Public_Rating, Review_Count, Crowd_Category,
+        Duplicate_Check, Clean_Data_Check
+    HAVING COUNT(*) > 1
+) AS Duplicates;
+
+SELECT
+    'Duplicate Business_ID' AS Check_Type,
+    COUNT(*) AS Total_Duplicate_IDs
+FROM (
+    SELECT Business_ID
+    FROM Fitness_Centre1
+    GROUP BY Business_ID
+    HAVING COUNT(*) > 1
+) AS Duplicates;
+
+SELECT
+    'Invalid Records' AS Check_Type,
+    COUNT(*) AS Total_Invalid_Records
+FROM Fitness_Centre1
+WHERE Membership_Price_INR < 0
+   OR Public_Rating < 0
+   OR Public_Rating > 5
+   OR Review_Count < 0
+   OR TRIM(Business_Name) = ''
+   OR TRIM(Location) = ''
+   OR TRIM(State) = ''
+   OR Crowd_Category NOT IN ('Low', 'Medium', 'High');
